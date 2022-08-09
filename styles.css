@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+  background: rgb(93, 109, 170);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.search-bar-container {
+  position: relative;
+  width: 300px;
+  margin-left: 30px;
+}
+
+.search-bar {
+  border: 1px white solid;
+  padding: 10px 25px;
+  border-radius: 2px;
+  background: rgb(93, 109, 170);
+  width: 100%;
+  color: white;
+  padding-left: 45px;
+}
+
+.search-bar::placeholder {
+  color: white;
+}
+
+.fa-search {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: solid;
+  padding-right: 10px;
+}
+
+/* BODY */
+.banner {
+  color: white;
+  background: #434978;
+  padding: 200px 100px 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  max-width: 700px;
+}
+
+.content h1 {
+  font-size: 3em;
+}
+
+.content p {
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+.banner .content a {
+  background-color: white;
+  color: #434978;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.image {
+  filter: invert(1);
+  max-width: 400px;
+  margin-left: 50px;
+}
+
+@media (max-width: 920px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    margin: 15px 0;
+  }
+}
